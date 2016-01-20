@@ -14,6 +14,8 @@
 		3C13BCD21C4F2FB300A00EEB /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 3C13BCD11C4F2FB300A00EEB /* Assets.xcassets */; };
 		3C13BCD51C4F2FB300A00EEB /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3C13BCD31C4F2FB300A00EEB /* LaunchScreen.storyboard */; };
 		3C13BCE01C4F2FB300A00EEB /* SoundManagerTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 3C13BCDF1C4F2FB300A00EEB /* SoundManagerTests.m */; };
+		3C13BCEC1C4F330D00A00EEB /* MFSoundManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 3C13BCEB1C4F330D00A00EEB /* MFSoundManager.m */; };
+		3C13BD8C1C4F4B9700A00EEB /* Sounds in Resources */ = {isa = PBXBuildFile; fileRef = 3C13BD8B1C4F4B9700A00EEB /* Sounds */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -40,6 +42,9 @@
 		3C13BCDB1C4F2FB300A00EEB /* SoundManagerTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = SoundManagerTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		3C13BCDF1C4F2FB300A00EEB /* SoundManagerTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SoundManagerTests.m; sourceTree = "<group>"; };
 		3C13BCE11C4F2FB300A00EEB /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		3C13BCEA1C4F330D00A00EEB /* MFSoundManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MFSoundManager.h; sourceTree = "<group>"; };
+		3C13BCEB1C4F330D00A00EEB /* MFSoundManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MFSoundManager.m; sourceTree = "<group>"; };
+		3C13BD8B1C4F4B9700A00EEB /* Sounds */ = {isa = PBXFileReference; lastKnownFileType = folder; path = Sounds; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -81,11 +86,14 @@
 		3C13BCC41C4F2FB300A00EEB /* SoundManager */ = {
 			isa = PBXGroup;
 			children = (
+				3C13BD8B1C4F4B9700A00EEB /* Sounds */,
 				3C13BCC81C4F2FB300A00EEB /* AppDelegate.h */,
 				3C13BCC91C4F2FB300A00EEB /* AppDelegate.m */,
 				3C13BCCB1C4F2FB300A00EEB /* ViewController.h */,
 				3C13BCCC1C4F2FB300A00EEB /* ViewController.m */,
 				3C13BCCE1C4F2FB300A00EEB /* Main.storyboard */,
+				3C13BCEA1C4F330D00A00EEB /* MFSoundManager.h */,
+				3C13BCEB1C4F330D00A00EEB /* MFSoundManager.m */,
 				3C13BCD11C4F2FB300A00EEB /* Assets.xcassets */,
 				3C13BCD31C4F2FB300A00EEB /* LaunchScreen.storyboard */,
 				3C13BCD61C4F2FB300A00EEB /* Info.plist */,
@@ -195,6 +203,7 @@
 			files = (
 				3C13BCD51C4F2FB300A00EEB /* LaunchScreen.storyboard in Resources */,
 				3C13BCD21C4F2FB300A00EEB /* Assets.xcassets in Resources */,
+				3C13BD8C1C4F4B9700A00EEB /* Sounds in Resources */,
 				3C13BCD01C4F2FB300A00EEB /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -214,6 +223,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				3C13BCCD1C4F2FB300A00EEB /* ViewController.m in Sources */,
+				3C13BCEC1C4F330D00A00EEB /* MFSoundManager.m in Sources */,
 				3C13BCCA1C4F2FB300A00EEB /* AppDelegate.m in Sources */,
 				3C13BCC71C4F2FB300A00EEB /* main.m in Sources */,
 			);
@@ -343,7 +353,9 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = "Brand Assets";
 				INFOPLIST_FILE = SoundManager/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.ghostmaple.SoundManager;
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -354,7 +366,9 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = "Brand Assets";
 				INFOPLIST_FILE = SoundManager/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.ghostmaple.SoundManager;
 				PRODUCT_NAME = "$(TARGET_NAME)";
